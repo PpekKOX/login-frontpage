@@ -32,20 +32,9 @@ body{
     height: 45%;
     transform: translate(-50%, -50%);
     border: 2px solid rgba(255,255,255,0.5);
-
+    backdrop-filter: blur(5px);
 }
 
-@media (max-width: 360px){
-    .main-box{
-        width: 80%;
-    }
-}
-
-@media (max-height: 600px){
-    .main-box{
-        height: 85%;
-    }
-}
 
 /* Login headline */
 
@@ -69,31 +58,29 @@ body{
 .user, .pass{
     position: absolute;
     width: 100%;
-    /* height: 30%; */
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
 .user{
     top: 25%;
-    padding: 0 2%;
+    padding: 0 10% 0 2%;
 }
 
 .pass{
-    bottom: 35%;
-    padding: 0 2%;
+    top: 45%;
+    padding: 0 10% 0 2%;
 }
 
 .user label, .pass label{
     font-size: 2.3rem;
-    /* transform: translateY(-50%); */
     color: white;
 }
 
 .user i, .pass i{
     position: absolute;
-    bottom: 0;
-    right: 2%;
-    font-size: 35px;
+    bottom: 5%;
+    right: 3%;
+    font-size: 30px;
 }
 
 .user-input, .pass-input{
@@ -103,8 +90,7 @@ body{
     border: none;
     outline: none;
     font-size: 2rem;
-    border: 2px solid black;
-    /* border-bottom: 2px solid rgba(255,255,255,0.6); */
+    border-bottom: 2px solid rgba(255,255,255,0.6);
     transition: 0.2s;
 }
 
@@ -123,7 +109,8 @@ body{
 
 .register{
     position: absolute;
-    bottom: 0;
+    left: 2%;
+    bottom: 1%;
 }
 
 .register p, .register a{
@@ -140,7 +127,7 @@ body{
 
 button{
     position: absolute;
-    width: 100%;
+    width: 80%;
     height: 8%;
     bottom: 15%;
     left: 50%;
@@ -149,4 +136,23 @@ button{
     border-radius: 40px;
     font-size: 2rem;
     font-weight: bold;
+}
+
+@media (max-width: 400px){
+    .main-box{
+        width: 80%;
+        height: 55%;
+    }
+}
+
+@media (max-height: 600px){
+    .main-box{
+        height: 85%;
+    }
+}
+
+@media (max-width: 600px){
+    .main-box{
+        width: 85%;
+    }
 }
