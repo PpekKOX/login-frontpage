@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* entire login box */
+
+.main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30%;
+    height: 45%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgba(255,255,255,0.5);
+
+}
+
+@media (max-width: 360px){
+    .main-box{
+        width: 80%;
+    }
+}
+
+@media (max-height: 600px){
+    .main-box{
+        height: 85%;
+    }
+}
+
+/* Login headline */
+
+.login{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login p{
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Username / Password form */
+
+
+
+.user, .pass{
+    position: absolute;
+    width: 100%;
+    /* height: 30%; */
+    border: 2px solid black;
+}
+
+.user{
+    top: 25%;
+    padding: 0 2%;
+}
+
+.pass{
+    bottom: 35%;
+    padding: 0 2%;
+}
+
+.user label, .pass label{
+    font-size: 2.3rem;
+    /* transform: translateY(-50%); */
+    color: white;
+}
+
+.user i, .pass i{
+    position: absolute;
+    bottom: 0;
+    right: 2%;
+    font-size: 35px;
+}
+
+.user-input, .pass-input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border: 2px solid black;
+    /* border-bottom: 2px solid rgba(255,255,255,0.6); */
+    transition: 0.2s;
+}
+
+.user-input:focus, .pass-input:focus{
+    border-bottom: 2px solid rgba(255,255,255);
+}
+
+/* Remember Me / Log in / Register Now */
+
+.forget{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.register{
+    position: absolute;
+    bottom: 0;
+}
+
+.register p, .register a{
+    font-size: 1.8rem;
+}
+
+.forget label, .forget a{
+    font-size: 1.5rem;
+}
+
+.register p, .forget label{
+    color: white;
+}
+
+button{
+    position: absolute;
+    width: 100%;
+    height: 8%;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: aqua;
+    border-radius: 40px;
+    font-size: 2rem;
+    font-weight: bold;
+}
